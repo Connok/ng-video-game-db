@@ -7,10 +7,10 @@ export interface Game {
     website: string;
     description: string;
     metacritic: number;
-    genre: Array<Genre>;
+    genres: Array<Genre>;
     parent_platforms: Array<ParentPlatform>;
     publishers: Array<Publishers>;
-    raiting: Array<Raiting>;
+    ratings: Array<Rating>;
     screenshots: Array<Screenshots>;
     trailers: Array<Trailer>;
 }
@@ -35,7 +35,7 @@ interface Publishers {
     name: string;
 }
 
-interface Raiting {
+interface Rating {
     id: number;
     count: number;
     title: string;
